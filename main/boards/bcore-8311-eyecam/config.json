@@ -1,0 +1,13 @@
+{
+    "target": "esp32s3",
+    "builds": [
+        {
+            "name": "bcore-8311-eyecam",
+            "sdkconfig_append": [
+                "CONFIG_ESP_PHY_MAX_WIFI_TX_POWER=10",
+                "CONFIG_ESP_PHY_MAX_TX_POWER=10",
+                "CONFIG_SPIRAM_MODE_OCT=y"
+            ]
+        }
+    ]
+}
